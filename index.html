@@ -222,7 +222,7 @@ nav.scrolled{box-shadow:0 6px 40px rgba(59,33,24,0.2);}
 #contact{padding:7rem 5rem;background:rgba(242,232,217,0.82);}
 .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:4rem;align-items:start;}
 .contact-info-label{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;}
-.contact-email-big{font-family:var(--serif);font-size:clamp(1.1rem,2.2vw,1.9rem);font-weight:700;color:var(--brown-dark);text-decoration:none;display:inline-block;position:relative;transition:color 0.3s;word-break:break-all;}
+.contact-email-big{font-family:var(--serif);font-size:clamp(1.1rem,2.2vw,1.9rem);font-weight:700;color:var(--brown-dark);text-decoration:none;display:inline-block;position:relative;transition:color 0.3s;word-break:break-all;background:none;border:none;cursor:pointer;padding:0;text-align:left;}
 .contact-email-big::after{content:"";position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--amber);transform:scaleX(0);transform-origin:left;transition:transform 0.4s ease;}
 .contact-email-big:hover::after{transform:scaleX(1);}
 .contact-email-big:hover{color:var(--amber);}
@@ -423,7 +423,7 @@ footer{background:rgba(46,26,14,0.92);padding:3rem 5rem;}
   </div>
   <div class="projects-grid">
     <div class="proj-card wide sa"><span class="proj-num">01</span><p class="proj-type">MLOps · NLP · Real-Time Systems</p><h3 class="proj-name">Charlie — MBTA Transit Assistant</h3><p class="proj-desc">ML-powered conversational transit assistant predicting delays, explaining disruptions, and navigating riders across all MBTA lines in real time. Full MLOps stack: Airflow orchestration, LightGBM delay models, CI/CD on GCP Cloud Run, Prometheus monitoring and drift detection. Presented at Google Cambridge.</p><span class="proj-award">3rd Place — MLOps Expo · Google Cambridge · Dec 2025</span><div class="proj-stack"><span class="s-tag">Airflow</span><span class="s-tag">LightGBM</span><span class="s-tag">Docker</span><span class="s-tag">GCP Cloud Run</span><span class="s-tag">GitHub Actions</span><span class="s-tag">FastAPI</span><span class="s-tag">SHAP</span><span class="s-tag">DVC</span></div><a href="https://github.com/rithika-sr/Charlie_MBTA-mlops" target="_blank" class="proj-link">View Repository <i class="fas fa-arrow-right"></i></a></div>
-    <div class="proj-card sa d1"><span class="proj-num">02</span><p class="proj-type">Deep Learning · Computer Vision</p><h3 class="proj-name">Discriminative Deep Learning</h3><p class="proj-desc">Complete CNN pipeline: 98.94% accuracy on 35-class classification with MobileNetV2, then multi-object detection at 93.52% <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a2cfe3f2e2928c97">[email&#160;protected]</a> with YOLOv8s across 4,108 images.</p><div class="proj-stack"><span class="s-tag">MobileNetV2</span><span class="s-tag">YOLOv8</span><span class="s-tag">TensorFlow</span><span class="s-tag">PyTorch</span></div><a href="https://github.com/rithika-sr/discriminative-deep-learning-project" target="_blank" class="proj-link">View Repository <i class="fas fa-arrow-right"></i></a></div>
+    <div class="proj-card sa d1"><span class="proj-num">02</span><p class="proj-type">Deep Learning · Computer Vision</p><h3 class="proj-name">Discriminative Deep Learning</h3><p class="proj-desc">Complete CNN pipeline: 98.94% accuracy on 35-class classification with MobileNetV2, then multi-object detection at 93.52% mAP at 0.5 with YOLOv8s across 4,108 images.</p><div class="proj-stack"><span class="s-tag">MobileNetV2</span><span class="s-tag">YOLOv8</span><span class="s-tag">TensorFlow</span><span class="s-tag">PyTorch</span></div><a href="https://github.com/rithika-sr/discriminative-deep-learning-project" target="_blank" class="proj-link">View Repository <i class="fas fa-arrow-right"></i></a></div>
     <div class="proj-card sa"><span class="proj-num">03</span><p class="proj-type">Medical AI · Deep Learning</p><h3 class="proj-name">Lung Nodule Segmentation</h3><p class="proj-desc">3D U-Net with Monte Carlo Dropout for lung cancer detection. 68.47% Dice Score with calibrated uncertainty, flags ambiguous predictions for radiologist review.</p><div class="proj-stack"><span class="s-tag">PyTorch</span><span class="s-tag">3D U-Net</span><span class="s-tag">MC Dropout</span><span class="s-tag">SimpleITK</span></div><a href="https://github.com/rithika-sr/lung-nodule-segmentation-uncertainty" target="_blank" class="proj-link">View Repository <i class="fas fa-arrow-right"></i></a></div>
     <div class="proj-card sa d1"><span class="proj-num">04</span><p class="proj-type">Clinical NLP · Transformers</p><h3 class="proj-name">Mental Health Crisis NLP</h3><p class="proj-desc">BioClinicalBERT triage system classifying clinical notes into 4 risk levels. 87.48% accuracy on 47K+ records. 94.8% precision on High-Risk cases, built for safe clinical deployment.</p><div class="proj-stack"><span class="s-tag">BioClinicalBERT</span><span class="s-tag">HuggingFace</span><span class="s-tag">PyTorch</span></div><a href="https://github.com/rithika-sr/unstructured-clinical-notes-mental-health-nlp" target="_blank" class="proj-link">View Repository <i class="fas fa-arrow-right"></i></a></div>
     <div class="proj-card sa d2"><span class="proj-num">05</span><p class="proj-type">Data Engineering · AWS</p><h3 class="proj-name">AWS Healthcare Pipeline</h3><p class="proj-desc">Serverless pipeline processing 250 healthcare accreditation records. Athena plus Lambda plus Step Functions plus CloudWatch. Zero errors, under 9s end-to-end execution.</p><div class="proj-stack"><span class="s-tag">Athena</span><span class="s-tag">Lambda</span><span class="s-tag">Step Functions</span><span class="s-tag">S3</span></div><a href="https://github.com/rithika-sr/aws-healthcare-data-pipeline" target="_blank" class="proj-link">View Repository <i class="fas fa-arrow-right"></i></a></div>
@@ -485,7 +485,7 @@ footer{background:rgba(46,26,14,0.92);padding:3rem 5rem;}
   <div class="contact-layout">
     <div class="sa-left">
       <p class="contact-info-label">Email</p>
-      <a href="/cdn-cgi/l/email-protection#e497858a8f859696858e81979385968dca96a48a8b96908c8185979081968aca818091" class="contact-email-big"><span class="__cf_email__" data-cfemail="572436393c362525363d32242036253e792517393825233f3236242332253979323322">[email&#160;protected]</span></a>
+      <button class="contact-email-big" onclick="copyEmail()" title="Click to copy email"><span id="emailDisplay">sankarrajeswari&#8203;.r&#8203;&#64;&#8203;northeastern&#8203;.edu</span><span id="emailCopied" style="display:none;font-size:0.75rem;color:var(--amber);"> ✓ Copied!</span></button>
       <div class="contact-availability">I am currently available for full-time roles in data engineering, ML engineering, and AI systems. If you have something interesting, I would love to hear about it.</div>
       <div class="contact-socials">
         <a href="https://www.linkedin.com/in/rithikasr/" target="_blank" class="soc-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -495,6 +495,7 @@ footer{background:rgba(46,26,14,0.92);padding:3rem 5rem;}
     </div>
     <div class="contact-form sa-right d1">
       <form id="contactForm" action="https://formspree.io/f/xvzwrkjg" method="POST">
+        <input type="hidden" name="_next" value="false"/>
         <div class="form-row">
           <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" name="name" placeholder="Your name" required/></div>
           <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" name="email" placeholder="your@email.com" required/></div>
@@ -599,6 +600,40 @@ window.addEventListener('DOMContentLoaded',function(){
   var pi=0,ci=0,del=false,tel=document.getElementById('typed');
   function type(){var p=phrases[pi];if(!del){tel.textContent=p.slice(0,++ci);if(ci===p.length){del=true;setTimeout(type,2200);return;}}else{tel.textContent=p.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;}}setTimeout(type,del?33:62);}
   if(tel)setTimeout(type,1400);
+
+
+  // FORMSPREE AJAX SUBMIT
+  var cf=document.getElementById('contactForm');
+  if(cf){
+    cf.addEventListener('submit',function(e){
+      e.preventDefault();
+      var btn=document.getElementById('sendBtn');
+      var st=document.getElementById('formStatus');
+      btn.disabled=true;
+      btn.querySelector('span').innerHTML='<i class="fas fa-spinner fa-spin"></i> Sending...';
+      fetch('https://formspree.io/f/xvzwrkjg',{
+        method:'POST',
+        body:new FormData(cf),
+        headers:{'Accept':'application/json'}
+      }).then(function(r){
+        if(r.ok){
+          st.style.color='var(--amber)';
+          st.textContent='Message sent! I will get back to you soon.';
+          cf.reset();
+        }else{
+          st.style.color='#c0392b';
+          st.textContent='Something went wrong. Please try again.';
+        }
+      }).catch(function(){
+        st.style.color='#c0392b';
+        st.textContent='Something went wrong. Please try again.';
+      }).finally(function(){
+        btn.disabled=false;
+        btn.querySelector('span').innerHTML='<i class="fas fa-paper-plane"></i> Send Message';
+        setTimeout(function(){st.textContent='';},5000);
+      });
+    });
+  }
 
 }); // end DOMContentLoaded
 
